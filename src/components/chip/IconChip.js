@@ -6,14 +6,14 @@ import Typography from '../texts/Typography';
 import { Icons } from '../../assets';
 
 // create a component
-const LocationChip = ({ icon, distance, style, color = '#fff' }) => {
+const IconChip = ({ icon, label, style, color = '#fff' }) => {
     let Icon = Icons[icon];
 
     return (
         <View style={[styles.container, style]}>
             <Icon height={16} width={16} stroke={color} style={{ marginRight: 5 }} />
             <Typography weight={'medium'} size={12} color={color}>
-                {distance}
+                {label}
             </Typography>
         </View>
     );
@@ -32,4 +32,4 @@ const styles = StyleSheet.create({
 });
 
 //make this component available to the app
-export default LocationChip;
+export default IconChip;

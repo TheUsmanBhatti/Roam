@@ -2,11 +2,14 @@
 import React, { Component } from 'react';
 import { View, Image, StyleSheet, Dimensions } from 'react-native';
 import { COLORS } from '../../theme/colors';
+import IconButton from '../../components/buttons/IconButton';
 const { width, height } = Dimensions.get('window');
 // create a component
 const Photos = ({ data }) => {
     return (
         <View style={styles.container}>
+            <IconButton style={{margin: 15}} icon="Add" label="Add Photo" backgroundColor={COLORS.tyrianPurple} color={COLORS.white} />
+
             <View style={styles.photosCon}>
                 {data?.map(item => (
                     <View key={item} style={styles.imageBox}>

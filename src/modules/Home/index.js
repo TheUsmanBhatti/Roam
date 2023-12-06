@@ -6,15 +6,23 @@ import MainCard from './mainCard';
 import InfoCardRight from './infoCardRight';
 import { mainFeed } from '../../assets/data/homeFeed';
 import Header1 from '../../components/headers/Header1';
+import { useNavigation } from '@react-navigation/native';
 
 const { height, width } = Dimensions.get('window');
 
 const Home = () => {
+    const navigation = useNavigation();
     const [flatListItem, setFlatlistItem] = useState({ height: height * 0.8, width: width });
 
     return (
         <View style={styles.container}>
-            <Header1 title={'Home'} iconLeft={'Settings'} iconRight={'Message'} onIconLeftPress={() => {}} onIconRightPress={() => {}} />
+            <Header1
+                title={'Home'}
+                iconLeft={'Settings'}
+                iconRight={'Message'}
+                onIconLeftPress={() => {}}
+                onIconRightPress={() => navigation?.navigate('Chat')}
+            />
 
             <FlatList
                 onLayout={event => setFlatlistItem({ height: event.nativeEvent.layout?.height, width: event.nativeEvent.layout?.width })}

@@ -1,24 +1,28 @@
-//import liraries
-import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import React from 'react';
+import { StyleSheet, ScrollView } from 'react-native';
+import { COLORS } from '../../../theme/colors';
+import PlanCard from '../../../components/cards/PlanCard';
 
-// create a component
 const Invites = () => {
     return (
-        <View style={styles.container}>
-            <Text>Invites</Text>
-        </View>
+        <ScrollView contentContainerStyle={styles.container}>
+            <PlanCard
+                image={'https://i.pinimg.com/236x/7f/3a/e1/7f3ae1df3d4861ac9a4ffbce1cca8161.jpg'}
+                title={'Plan Name'}
+                description={'Something about plan'}
+                address={'New York'}
+                showInviteBtn={true}
+            />
+        </ScrollView>
     );
 };
 
-// define your styles
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
+        backgroundColor: COLORS.white,
+        padding: 15,
+        paddingBottom: 100
+    }
 });
 
-//make this component available to the app
 export default Invites;

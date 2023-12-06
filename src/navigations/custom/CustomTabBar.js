@@ -23,7 +23,7 @@ const CustomTabBar = props => {
                 <TabButton
                     icon={'Users'}
                     focused={state?.index == 2}
-                    onPress={() => navigation.navigate('Friends')}
+                    onPress={() => navigation.navigate('Feeds')}
                 />
 
                 <TabButton

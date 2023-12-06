@@ -22,9 +22,9 @@ const TabNavigator = () => {
             }}>
             <Tab.Screen name="Home" component={Home} options={{ headerShown: false }} />
             <Tab.Screen name="Likes" component={Likes} options={{ headerShown: false }} />
-            <Tab.Screen name="Friends" component={Feed} options={{ headerShown: false }} />
-            <Tab.Screen name="Profile" component={MyProfile} />
-            <Tab.Screen name="Location" component={Location} />
+            <Tab.Screen name="Feeds" component={Feed} options={{ headerShown: false }} />
+            <Tab.Screen name="Profile" component={MyProfile} options={{ headerShown: false }} />
+            <Tab.Screen name="Location" component={Location} options={{ headerShown: false }} />
         </Tab.Navigator>
     );
 };

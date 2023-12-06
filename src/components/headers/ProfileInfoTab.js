@@ -20,7 +20,7 @@ const ProfileInfoTab = ({ active, onPress }) => {
             <TouchableOpacity
                 onPress={() => onPress('prompt')}
                 style={[styles.btnCon, { borderBlockColor: active == 'prompt' ? COLORS.black : COLORS.gray.dark }]}>
-                <Icons.Star width={24} height={24} stroke={active == 'prompt' ? COLORS.black : COLORS.gray.dark} />
+                <Icons.SparkleStar width={24} height={24} stroke={active == 'prompt' ? COLORS.black : COLORS.gray.dark} />
                 <Typography weight={'medium'} color={active == 'prompt' ? COLORS.black : COLORS.gray.dark}>
                     Prompt
                 </Typography>

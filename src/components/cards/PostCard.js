@@ -4,7 +4,7 @@ import { View, Image, StyleSheet } from 'react-native';
 import Title1 from '../texts/Title1';
 import { COLORS } from '../../theme/colors';
 import Typography from '../texts/Typography';
-import LocationChip from '../chip/LocationChip';
+import IconChip from '../chip/IconChip';
 import PostCardHeader from '../headers/PostCardHeader';
 
 // create a component
@@ -19,7 +19,7 @@ const PostCard = ({ avatar, postedBy, postImage, postedTime, title, description,
                 <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
                     <Title1>{title}</Title1>
 
-                    <LocationChip icon={'MarkerPin'} distance={distance} />
+                    <IconChip icon={'MarkerPin'} label={distance} />
                 </View>
 
                 <Typography weight={'medium'}>{description}</Typography>

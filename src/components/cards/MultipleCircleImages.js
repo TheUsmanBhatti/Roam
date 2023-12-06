@@ -3,9 +3,9 @@ import { View, Text, StyleSheet, ImageBackground, Image } from 'react-native';
 import { COLORS } from '../../theme/colors';
 import Typography from '../texts/Typography';
 
-const MultipleCircleImages = ({ images, more, total }) => {
+const MultipleCircleImages = ({ images, more, total, style }) => {
     return (
-        <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+        <View style={{ flexDirection: 'row', alignItems: 'center', ...style }}>
             {images?.slice(0, 3).map(i => (
                 <Image key={i} source={{ uri: i }} style={styles.image} />
             ))}
@@ -15,9 +15,11 @@ const MultipleCircleImages = ({ images, more, total }) => {
                 </View>
             </ImageBackground>
 
-            <Typography weight={'regular'} color={COLORS.black} style={{ marginLeft: 15 }}>
-                {total} <Typography weight={'regular'}>Mutual Connections</Typography>
-            </Typography>
+            {total && (
+                <Typography weight={'regular'} color={COLORS.black} style={{ marginLeft: 15 }}>
+                    {total} <Typography weight={'regular'}>Mutual Connections</Typography>
+                </Typography>
+            )}
         </View>
     );
 };

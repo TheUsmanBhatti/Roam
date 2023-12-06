@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { COLORS } from '../../theme/colors';
 import Typography from '../texts/Typography';
 import { Icons } from '../../assets';
@@ -19,6 +19,15 @@ const InfoCard1 = ({ title, data, showAddNew = false, onAddNewPress }) => {
                         </Typography>
                     </View>
                 ))}
+
+                {showAddNew && (
+                    <TouchableOpacity onPress={onAddNewPress} style={[styles.activitiesBox, { borderRadius: 30, backgroundColor: COLORS.peachYellow }]}>
+                        <Icons.Add width={24} height={24} stroke={COLORS.black} style={{ marginRight: 8 }} />
+                        <Typography weight={'medium'} color={COLORS.black}>
+                            Add
+                        </Typography>
+                    </TouchableOpacity>
+                )}
             </View>
         </View>
     );

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { View, Image, StyleSheet, ImageBackground } from 'react-native';
 import Typography from '../texts/Typography';
 import Title1 from '../texts/Title1';
-import LocationChip from '../chip/LocationChip';
+import IconChip from '../chip/IconChip';
 import PostCardHeader from '../headers/PostCardHeader';
 import { COLORS } from '../../theme/colors';
 import IconButton from '../buttons/IconButton';
@@ -42,13 +42,13 @@ const PostCard2 = ({ avatar, postedBy, postImage, postedTime, title, description
             </View>
 
             <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 10, marginTop: 10 }}>
-                <LocationChip style={{ backgroundColor: COLORS.papayaWhip }} color={COLORS.black} icon={'MarkerPin'} distance={'4 mi'} />
-                <LocationChip style={{ backgroundColor: COLORS.papayaWhip }} color={COLORS.black} icon={'MarkerPin'} distance={'Sept 15'} />
-                <LocationChip
+                <IconChip style={{ backgroundColor: COLORS.papayaWhip }} color={COLORS.black} icon={'MarkerPin'} label={'4 mi'} />
+                <IconChip style={{ backgroundColor: COLORS.papayaWhip }} color={COLORS.black} icon={'MarkerPin'} label={'Sept 15'} />
+                <IconChip
                     style={{ backgroundColor: COLORS.papayaWhip }}
                     color={COLORS.black}
                     icon={'Calendar'}
-                    distance={'8:00 pm - 11:00 pm'}
+                    label={'8:00 pm - 11:00 pm'}
                 />
             </View>
         </View>

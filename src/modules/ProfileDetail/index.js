@@ -8,11 +8,12 @@ import MultipleCircleImages from '../../components/cards/MultipleCircleImages';
 import { mainFeed, mutualFriends1, plans, profilePosts, promptData } from '../../assets/data/homeFeed';
 import InfoCard1 from '../../components/cards/InfoCard1';
 import { Icons } from '../../assets';
-import LocationChip from '../../components/chip/LocationChip';
+import IconChip from '../../components/chip/IconChip';
 import ProfileInfoTab from '../../components/headers/ProfileInfoTab';
 import Photos from './Photos';
 import Prompt from './Prompt';
 import Plan from './Plan';
+import ProfileTop from '../../components/headers/ProfileTop';
 
 const ProfileDetail = ({ route }) => {
     const { userId } = route?.params;
@@ -29,37 +30,7 @@ const ProfileDetail = ({ route }) => {
                     backgroundColor: '#f9f9f9',
                     padding: 15,
                 }}>
-                <View
-                    style={{
-                        flexDirection: 'row',
-                        justifyContent: 'space-between',
-                        alignItems: 'center',
-                    }}>
-                    <View style={{ flexDirection: 'row' }}>
-                        <View style={{ borderWidth: 2, borderColor: COLORS.green, borderRadius: 30, padding: 2 }}>
-                            <Image
-                                source={{ uri: user?.avatar }}
-                                style={{ width: 52, height: 52, borderRadius: 30, backgroundColor: COLORS.gray.dark }}
-                            />
-                        </View>
-
-                        <View style={{ marginLeft: 12 }}>
-                            <Typography weight={'regular'} size={12}>
-                                username
-                            </Typography>
-                            <Title1>{user?.name}</Title1>
-                            <Typography weight={'regular'} size={12}>
-                                {user?.age} years old
-                            </Typography>
-                        </View>
-                    </View>
-                    <View>
-                        <Title1>234</Title1>
-                        <Typography weight={'regular'} size={12}>
-                            Friends
-                        </Typography>
-                    </View>
-                </View>
+                <ProfileTop name={user?.name} age={user?.age} avatar={user?.avatar} />
 
                 <View style={{ marginTop: 15 }}>
                     <MultipleCircleImages total={mutualFriends1?.total} more={mutualFriends1?.more} images={mutualFriends1?.images} />
@@ -71,7 +42,7 @@ const ProfileDetail = ({ route }) => {
                     <View style={{ flexDirection: 'row', flexWrap: 'nowrap', gap: 10 }}>
                         <Title1>Location</Title1>
 
-                        <LocationChip icon={'MarkerPin'} distance={'1 mi'} />
+                        <IconChip icon={'MarkerPin'} label={'1 mi'} />
                     </View>
 
                     <Typography weight={'semiBold'}>{user?.location?.address}</Typography>

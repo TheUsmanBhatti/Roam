@@ -3,11 +3,14 @@ import React, { Component } from 'react';
 import { View, Image, StyleSheet, FlatList } from 'react-native';
 import { COLORS } from '../../theme/colors';
 import PostCard from '../../components/cards/PostCard';
+import IconButton from '../../components/buttons/IconButton';
 
 // create a component
 const Plan = ({ data }) => {
     return (
         <View style={styles.container}>
+            <IconButton style={{ margin: 15 }} icon="Add" label="Create a plan" backgroundColor={COLORS.tyrianPurple} color={COLORS.white} />
+
             <FlatList
                 data={data}
                 scrollEnabled={false}

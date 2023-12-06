@@ -7,13 +7,17 @@ import Requests from './requests';
 import Invites from './invites';
 import { COLORS } from '../../theme/colors';
 import Header1 from '../../components/headers/Header1';
+import SimpleButton from '../../components/buttons/SimpleButton';
 
 const Tab = createMaterialTopTabNavigator();
 
-const Feed = () => {
+
+const Feed = ({navigation}) => {
     return (
         <View style={{ flex: 1, backgroundColor: COLORS.white }}>
-            <Header1 title={'Friends'} iconLeft={'Settings'} iconRight={'Message'} onIconLeftPress={() => {}} onIconRightPress={() => {}} />
+            <Header1 iconLeft={'Add'} iconRight={'Message'} onIconLeftPress={() => {}} onIconRightPress={() => navigation.navigate('Chat')}>
+                <SimpleButton onPress={() => navigation.navigate('Friends')} label={'Add Friends'} style={{ flex: 0.4 }} />
+            </Header1>
 
             <Tab.Navigator
                 tabBarPosition={'top'}
@@ -46,7 +50,7 @@ const Feed = () => {
                         marginHorizontal: 15,
                     },
                 }}>
-                <Tab.Screen name="Feed" component={Feeds} options={{ tabBarLabel: 'Feed' }} />
+                <Tab.Screen name="MyFeed" component={Feeds} options={{ tabBarLabel: 'Feed' }} />
                 <Tab.Screen name="MyPlans" component={MyPlans} options={{ tabBarLabel: 'My Plans' }} />
                 <Tab.Screen name="Requests" component={Requests} options={{ tabBarLabel: 'Requests' }} />
                 <Tab.Screen name="Invites" component={Invites} options={{ tabBarLabel: 'Invites' }} />

@@ -6,15 +6,23 @@ import MainCard from './mainCard';
 import InfoCardRight from './infoCardRight';
 import Header1 from '../../components/headers/Header1';
 import { likeFeed } from '../../assets/data/likeFeed';
+import { useNavigation } from '@react-navigation/native';
 
 const { height, width } = Dimensions.get('window');
 
 const Likes = () => {
+    const navigation = useNavigation()
     const [flatListItem, setFlatlistItem] = useState({ height: height * 0.8, width: width });
 
     return (
         <View style={styles.container}>
-            <Header1 title={'Like Hub'} iconLeft={'Filter'} iconRight={'Message'} onIconLeftPress={() => {}} onIconRightPress={() => {}} />
+            <Header1
+                title={'Like Hub'}
+                iconLeft={'Filter'}
+                iconRight={'Message'}
+                onIconLeftPress={() => {}}
+                onIconRightPress={() => navigation?.navigate('Chat')}
+            />
 
             <FlatList
                 onLayout={event => setFlatlistItem({ height: event.nativeEvent.layout?.height, width: event.nativeEvent.layout?.width })}

@@ -1,6 +1,6 @@
 //import liraries
 import React, { Component, useState } from 'react';
-import { View, Text, StyleSheet, ScrollView, Modal } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, Modal, SafeAreaView } from 'react-native';
 import ProfileTop from '../../components/headers/ProfileTop';
 import { mainFeed, plans, profilePosts, promptData } from '../../assets/data/homeFeed';
 import Title1 from '../../components/texts/Title1';
@@ -76,7 +76,9 @@ const MyProfile = () => {
                 )}
 
                 <Modal animationType="slide" visible={showEditProfile}>
+                    <SafeAreaView style={{flex: 1}}>
                     <EditProfile onClose={() => setShowEditProfile(false)} />
+                    </SafeAreaView>
                 </Modal>
             </ScrollView>
         </>

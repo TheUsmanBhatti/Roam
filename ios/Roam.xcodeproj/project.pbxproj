@@ -8,32 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* RoamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RoamTests.m */; };
+		081D2D9E01A74B6C8179EE8D /* ClashDisplay-Extralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = B63E33EB2CCC4FE4B3A2EF95 /* ClashDisplay-Extralight.otf */; };
 		0C80B921A6F3F58F76C31292 /* libPods-Roam.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-Roam.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		7699B88040F8A987B510C191 /* libPods-Roam-RoamTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-Roam-RoamTests.a */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		1CB7909209654199AC16283F /* ClashDisplay-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C85D41851A248BAAC919080 /* ClashDisplay-Bold.otf */; };
-		081D2D9E01A74B6C8179EE8D /* ClashDisplay-Extralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = B63E33EB2CCC4FE4B3A2EF95 /* ClashDisplay-Extralight.otf */; };
-		E880489AEDFD44D8A2CF4265 /* ClashDisplay-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = DEFAFD17ACB849FDA0EE8809 /* ClashDisplay-Light.otf */; };
-		D2EBF68328CA4791ABD4DF0F /* ClashDisplay-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF210625FD17435684872A1E /* ClashDisplay-Medium.otf */; };
-		E1A2DD9014BB474A96732346 /* ClashDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 305AD25DA9154F65B5A29ED5 /* ClashDisplay-Regular.otf */; };
-		4A386689A12A428DB5BCAB34 /* ClashDisplay-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0B83D41D70744D5CB45AB069 /* ClashDisplay-Semibold.otf */; };
 		20F63EE3F49C451CA28DF4F0 /* ganos-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2E1315428F694454AF2A5E42 /* ganos-Black.otf */; };
-		D703E7F1FF0E4418B5F47ECE /* ganos-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4DB3335C4448439BB5C5D162 /* ganos-BlackItalic.otf */; };
-		8FEA7C9E9BF14E3187BDCE32 /* ganos-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2EEF656F84214A48BDDACDD1 /* ganos-Bold.otf */; };
-		45EE2603CAA543FE9631686E /* ganos-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E13B6DD25D694E9EACD35EB2 /* ganos-BoldItalic.otf */; };
-		9584AAAFDBD34DBD92D1ACE1 /* ganos-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1C92E4F446B6423C8A967751 /* ganos-ExtraBold.otf */; };
-		7BD3A26733E34EECB0728C34 /* ganos-ExtraBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A684F8ACB8E04EA89A885A36 /* ganos-ExtraBoldItalic.otf */; };
-		89BBCC97006B4F6487F04836 /* ganos-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88EC2DD5355744CFAE27EC10 /* ganos-Italic.otf */; };
-		87D9FB46BEC446C5B3296A3A /* ganos-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB0F6999B43A4CDCA5BE3BEE /* ganos-Light.otf */; };
-		AF77E7ED42DA408ABB841037 /* ganos-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9285F21680DE4B3DAFE56A4D /* ganos-LightItalic.otf */; };
-		705C7CFA19514A18BBA692DB /* ganos-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 82DE9A2568AC4CC89831160A /* ganos-Medium.otf */; };
-		84B532A9A23645E8B1C1734F /* ganos-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 67AAA4C9244D41BDB8DBF68A /* ganos-MediumItalic.otf */; };
-		669C625445304FAFBD5CB5EF /* ganos-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 29BBBB26F7D344EDAE6E4E13 /* ganos-Regular.otf */; };
 		33CEDF7D503D49C09C3CB41E /* ganos-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F6DA8EAB0B7145E7B06D378F /* ganos-SemiBold.otf */; };
+		45EE2603CAA543FE9631686E /* ganos-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E13B6DD25D694E9EACD35EB2 /* ganos-BoldItalic.otf */; };
+		4A386689A12A428DB5BCAB34 /* ClashDisplay-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0B83D41D70744D5CB45AB069 /* ClashDisplay-Semibold.otf */; };
+		669C625445304FAFBD5CB5EF /* ganos-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 29BBBB26F7D344EDAE6E4E13 /* ganos-Regular.otf */; };
+		705C7CFA19514A18BBA692DB /* ganos-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 82DE9A2568AC4CC89831160A /* ganos-Medium.otf */; };
 		73B65A6E52F24E2EA6837112 /* ganos-SemiBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 191BE82D4AF8454393024A22 /* ganos-SemiBoldItalic.otf */; };
+		7699B88040F8A987B510C191 /* libPods-Roam-RoamTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-Roam-RoamTests.a */; };
+		7BD3A26733E34EECB0728C34 /* ganos-ExtraBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A684F8ACB8E04EA89A885A36 /* ganos-ExtraBoldItalic.otf */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		84B532A9A23645E8B1C1734F /* ganos-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 67AAA4C9244D41BDB8DBF68A /* ganos-MediumItalic.otf */; };
+		87D9FB46BEC446C5B3296A3A /* ganos-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB0F6999B43A4CDCA5BE3BEE /* ganos-Light.otf */; };
+		89BBCC97006B4F6487F04836 /* ganos-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88EC2DD5355744CFAE27EC10 /* ganos-Italic.otf */; };
+		8FEA7C9E9BF14E3187BDCE32 /* ganos-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2EEF656F84214A48BDDACDD1 /* ganos-Bold.otf */; };
+		9584AAAFDBD34DBD92D1ACE1 /* ganos-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1C92E4F446B6423C8A967751 /* ganos-ExtraBold.otf */; };
+		AF77E7ED42DA408ABB841037 /* ganos-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9285F21680DE4B3DAFE56A4D /* ganos-LightItalic.otf */; };
+		D2EBF68328CA4791ABD4DF0F /* ClashDisplay-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF210625FD17435684872A1E /* ClashDisplay-Medium.otf */; };
+		D703E7F1FF0E4418B5F47ECE /* ganos-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4DB3335C4448439BB5C5D162 /* ganos-BlackItalic.otf */; };
+		E1A2DD9014BB474A96732346 /* ClashDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 305AD25DA9154F65B5A29ED5 /* ClashDisplay-Regular.otf */; };
+		E880489AEDFD44D8A2CF4265 /* ClashDisplay-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = DEFAFD17ACB849FDA0EE8809 /* ClashDisplay-Light.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,40 +50,40 @@
 		00E356EE1AD99517003FC87E /* RoamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* RoamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoamTests.m; sourceTree = "<group>"; };
+		0B83D41D70744D5CB45AB069 /* ClashDisplay-Semibold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "ClashDisplay-Semibold.otf"; path = "../src/assets/fonts/ClashDisplay-Semibold.otf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* Roam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Roam/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = Roam/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Roam/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Roam/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Roam/main.m; sourceTree = "<group>"; };
+		191BE82D4AF8454393024A22 /* ganos-SemiBoldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "ganos-SemiBoldItalic.otf"; path = "../src/assets/fonts/ganos-SemiBoldItalic.otf"; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-Roam-RoamTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Roam-RoamTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C92E4F446B6423C8A967751 /* ganos-ExtraBold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "ganos-ExtraBold.otf"; path = "../src/assets/fonts/ganos-ExtraBold.otf"; sourceTree = "<group>"; };
+		29BBBB26F7D344EDAE6E4E13 /* ganos-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "ganos-Regular.otf"; path = "../src/assets/fonts/ganos-Regular.otf"; sourceTree = "<group>"; };
+		2E1315428F694454AF2A5E42 /* ganos-Black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "ganos-Black.otf"; path = "../src/assets/fonts/ganos-Black.otf"; sourceTree = "<group>"; };
+		2EEF656F84214A48BDDACDD1 /* ganos-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "ganos-Bold.otf"; path = "../src/assets/fonts/ganos-Bold.otf"; sourceTree = "<group>"; };
+		305AD25DA9154F65B5A29ED5 /* ClashDisplay-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "ClashDisplay-Regular.otf"; path = "../src/assets/fonts/ClashDisplay-Regular.otf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-Roam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roam.debug.xcconfig"; path = "Target Support Files/Pods-Roam/Pods-Roam.debug.xcconfig"; sourceTree = "<group>"; };
+		4C85D41851A248BAAC919080 /* ClashDisplay-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "ClashDisplay-Bold.otf"; path = "../src/assets/fonts/ClashDisplay-Bold.otf"; sourceTree = "<group>"; };
+		4DB3335C4448439BB5C5D162 /* ganos-BlackItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "ganos-BlackItalic.otf"; path = "../src/assets/fonts/ganos-BlackItalic.otf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-Roam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roam.release.xcconfig"; path = "Target Support Files/Pods-Roam/Pods-Roam.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-Roam-RoamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roam-RoamTests.debug.xcconfig"; path = "Target Support Files/Pods-Roam-RoamTests/Pods-Roam-RoamTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-Roam.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Roam.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67AAA4C9244D41BDB8DBF68A /* ganos-MediumItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "ganos-MediumItalic.otf"; path = "../src/assets/fonts/ganos-MediumItalic.otf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Roam/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		82DE9A2568AC4CC89831160A /* ganos-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "ganos-Medium.otf"; path = "../src/assets/fonts/ganos-Medium.otf"; sourceTree = "<group>"; };
+		88EC2DD5355744CFAE27EC10 /* ganos-Italic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "ganos-Italic.otf"; path = "../src/assets/fonts/ganos-Italic.otf"; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-Roam-RoamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Roam-RoamTests.release.xcconfig"; path = "Target Support Files/Pods-Roam-RoamTests/Pods-Roam-RoamTests.release.xcconfig"; sourceTree = "<group>"; };
+		9285F21680DE4B3DAFE56A4D /* ganos-LightItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "ganos-LightItalic.otf"; path = "../src/assets/fonts/ganos-LightItalic.otf"; sourceTree = "<group>"; };
+		A684F8ACB8E04EA89A885A36 /* ganos-ExtraBoldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "ganos-ExtraBoldItalic.otf"; path = "../src/assets/fonts/ganos-ExtraBoldItalic.otf"; sourceTree = "<group>"; };
+		B63E33EB2CCC4FE4B3A2EF95 /* ClashDisplay-Extralight.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "ClashDisplay-Extralight.otf"; path = "../src/assets/fonts/ClashDisplay-Extralight.otf"; sourceTree = "<group>"; };
+		CB0F6999B43A4CDCA5BE3BEE /* ganos-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "ganos-Light.otf"; path = "../src/assets/fonts/ganos-Light.otf"; sourceTree = "<group>"; };
+		DEFAFD17ACB849FDA0EE8809 /* ClashDisplay-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "ClashDisplay-Light.otf"; path = "../src/assets/fonts/ClashDisplay-Light.otf"; sourceTree = "<group>"; };
+		E13B6DD25D694E9EACD35EB2 /* ganos-BoldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "ganos-BoldItalic.otf"; path = "../src/assets/fonts/ganos-BoldItalic.otf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		4C85D41851A248BAAC919080 /* ClashDisplay-Bold.otf */ = {isa = PBXFileReference; name = "ClashDisplay-Bold.otf"; path = "../src/assets/fonts/ClashDisplay-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		B63E33EB2CCC4FE4B3A2EF95 /* ClashDisplay-Extralight.otf */ = {isa = PBXFileReference; name = "ClashDisplay-Extralight.otf"; path = "../src/assets/fonts/ClashDisplay-Extralight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		DEFAFD17ACB849FDA0EE8809 /* ClashDisplay-Light.otf */ = {isa = PBXFileReference; name = "ClashDisplay-Light.otf"; path = "../src/assets/fonts/ClashDisplay-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		FF210625FD17435684872A1E /* ClashDisplay-Medium.otf */ = {isa = PBXFileReference; name = "ClashDisplay-Medium.otf"; path = "../src/assets/fonts/ClashDisplay-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		305AD25DA9154F65B5A29ED5 /* ClashDisplay-Regular.otf */ = {isa = PBXFileReference; name = "ClashDisplay-Regular.otf"; path = "../src/assets/fonts/ClashDisplay-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		0B83D41D70744D5CB45AB069 /* ClashDisplay-Semibold.otf */ = {isa = PBXFileReference; name = "ClashDisplay-Semibold.otf"; path = "../src/assets/fonts/ClashDisplay-Semibold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		2E1315428F694454AF2A5E42 /* ganos-Black.otf */ = {isa = PBXFileReference; name = "ganos-Black.otf"; path = "../src/assets/fonts/ganos-Black.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4DB3335C4448439BB5C5D162 /* ganos-BlackItalic.otf */ = {isa = PBXFileReference; name = "ganos-BlackItalic.otf"; path = "../src/assets/fonts/ganos-BlackItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		2EEF656F84214A48BDDACDD1 /* ganos-Bold.otf */ = {isa = PBXFileReference; name = "ganos-Bold.otf"; path = "../src/assets/fonts/ganos-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E13B6DD25D694E9EACD35EB2 /* ganos-BoldItalic.otf */ = {isa = PBXFileReference; name = "ganos-BoldItalic.otf"; path = "../src/assets/fonts/ganos-BoldItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		1C92E4F446B6423C8A967751 /* ganos-ExtraBold.otf */ = {isa = PBXFileReference; name = "ganos-ExtraBold.otf"; path = "../src/assets/fonts/ganos-ExtraBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A684F8ACB8E04EA89A885A36 /* ganos-ExtraBoldItalic.otf */ = {isa = PBXFileReference; name = "ganos-ExtraBoldItalic.otf"; path = "../src/assets/fonts/ganos-ExtraBoldItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		88EC2DD5355744CFAE27EC10 /* ganos-Italic.otf */ = {isa = PBXFileReference; name = "ganos-Italic.otf"; path = "../src/assets/fonts/ganos-Italic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		CB0F6999B43A4CDCA5BE3BEE /* ganos-Light.otf */ = {isa = PBXFileReference; name = "ganos-Light.otf"; path = "../src/assets/fonts/ganos-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9285F21680DE4B3DAFE56A4D /* ganos-LightItalic.otf */ = {isa = PBXFileReference; name = "ganos-LightItalic.otf"; path = "../src/assets/fonts/ganos-LightItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		82DE9A2568AC4CC89831160A /* ganos-Medium.otf */ = {isa = PBXFileReference; name = "ganos-Medium.otf"; path = "../src/assets/fonts/ganos-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		67AAA4C9244D41BDB8DBF68A /* ganos-MediumItalic.otf */ = {isa = PBXFileReference; name = "ganos-MediumItalic.otf"; path = "../src/assets/fonts/ganos-MediumItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		29BBBB26F7D344EDAE6E4E13 /* ganos-Regular.otf */ = {isa = PBXFileReference; name = "ganos-Regular.otf"; path = "../src/assets/fonts/ganos-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		F6DA8EAB0B7145E7B06D378F /* ganos-SemiBold.otf */ = {isa = PBXFileReference; name = "ganos-SemiBold.otf"; path = "../src/assets/fonts/ganos-SemiBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		191BE82D4AF8454393024A22 /* ganos-SemiBoldItalic.otf */ = {isa = PBXFileReference; name = "ganos-SemiBoldItalic.otf"; path = "../src/assets/fonts/ganos-SemiBoldItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F6DA8EAB0B7145E7B06D378F /* ganos-SemiBold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "ganos-SemiBold.otf"; path = "../src/assets/fonts/ganos-SemiBold.otf"; sourceTree = "<group>"; };
+		FF210625FD17435684872A1E /* ClashDisplay-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "ClashDisplay-Medium.otf"; path = "../src/assets/fonts/ClashDisplay-Medium.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +146,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6B8D733E09A4435099825B0F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C85D41851A248BAAC919080 /* ClashDisplay-Bold.otf */,
+				B63E33EB2CCC4FE4B3A2EF95 /* ClashDisplay-Extralight.otf */,
+				DEFAFD17ACB849FDA0EE8809 /* ClashDisplay-Light.otf */,
+				FF210625FD17435684872A1E /* ClashDisplay-Medium.otf */,
+				305AD25DA9154F65B5A29ED5 /* ClashDisplay-Regular.otf */,
+				0B83D41D70744D5CB45AB069 /* ClashDisplay-Semibold.otf */,
+				2E1315428F694454AF2A5E42 /* ganos-Black.otf */,
+				4DB3335C4448439BB5C5D162 /* ganos-BlackItalic.otf */,
+				2EEF656F84214A48BDDACDD1 /* ganos-Bold.otf */,
+				E13B6DD25D694E9EACD35EB2 /* ganos-BoldItalic.otf */,
+				1C92E4F446B6423C8A967751 /* ganos-ExtraBold.otf */,
+				A684F8ACB8E04EA89A885A36 /* ganos-ExtraBoldItalic.otf */,
+				88EC2DD5355744CFAE27EC10 /* ganos-Italic.otf */,
+				CB0F6999B43A4CDCA5BE3BEE /* ganos-Light.otf */,
+				9285F21680DE4B3DAFE56A4D /* ganos-LightItalic.otf */,
+				82DE9A2568AC4CC89831160A /* ganos-Medium.otf */,
+				67AAA4C9244D41BDB8DBF68A /* ganos-MediumItalic.otf */,
+				29BBBB26F7D344EDAE6E4E13 /* ganos-Regular.otf */,
+				F6DA8EAB0B7145E7B06D378F /* ganos-SemiBold.otf */,
+				191BE82D4AF8454393024A22 /* ganos-SemiBoldItalic.otf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,34 +216,6 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
-		};
-		6B8D733E09A4435099825B0F /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				4C85D41851A248BAAC919080 /* ClashDisplay-Bold.otf */,
-				B63E33EB2CCC4FE4B3A2EF95 /* ClashDisplay-Extralight.otf */,
-				DEFAFD17ACB849FDA0EE8809 /* ClashDisplay-Light.otf */,
-				FF210625FD17435684872A1E /* ClashDisplay-Medium.otf */,
-				305AD25DA9154F65B5A29ED5 /* ClashDisplay-Regular.otf */,
-				0B83D41D70744D5CB45AB069 /* ClashDisplay-Semibold.otf */,
-				2E1315428F694454AF2A5E42 /* ganos-Black.otf */,
-				4DB3335C4448439BB5C5D162 /* ganos-BlackItalic.otf */,
-				2EEF656F84214A48BDDACDD1 /* ganos-Bold.otf */,
-				E13B6DD25D694E9EACD35EB2 /* ganos-BoldItalic.otf */,
-				1C92E4F446B6423C8A967751 /* ganos-ExtraBold.otf */,
-				A684F8ACB8E04EA89A885A36 /* ganos-ExtraBoldItalic.otf */,
-				88EC2DD5355744CFAE27EC10 /* ganos-Italic.otf */,
-				CB0F6999B43A4CDCA5BE3BEE /* ganos-Light.otf */,
-				9285F21680DE4B3DAFE56A4D /* ganos-LightItalic.otf */,
-				82DE9A2568AC4CC89831160A /* ganos-Medium.otf */,
-				67AAA4C9244D41BDB8DBF68A /* ganos-MediumItalic.otf */,
-				29BBBB26F7D344EDAE6E4E13 /* ganos-Regular.otf */,
-				F6DA8EAB0B7145E7B06D378F /* ganos-SemiBold.otf */,
-				191BE82D4AF8454393024A22 /* ganos-SemiBoldItalic.otf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
@@ -653,7 +653,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -661,6 +661,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
+					_LIBCPP_ENABLE_CXX17_REMOVED_UNARY_BINARY_FUNCTION,
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -681,12 +682,18 @@
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-DFOLLY_NO_CONFIG",
 					"-DFOLLY_MOBILE=1",
 					"-DFOLLY_USE_LIBCPP=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -724,9 +731,13 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					_LIBCPP_ENABLE_CXX17_REMOVED_UNARY_BINARY_FUNCTION,
+				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -744,12 +755,18 @@
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-DFOLLY_NO_CONFIG",
 					"-DFOLLY_MOBILE=1",
 					"-DFOLLY_USE_LIBCPP=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

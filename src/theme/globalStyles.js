@@ -24,6 +24,18 @@ const globalStyles = StyleSheet.create({
         borderBottomWidth: 1,
         borderBottomColor: COLORS.gray.medium,
     },
+    checkboxCard: {
+        marginHorizontal: 15,
+        paddingVertical: 20,
+        borderTopWidth: 1,
+        borderTopColor: COLORS.gray.medium,
+    },
+    justifyContainer: {
+        flexDirection: 'row',
+        paddingVertical: 15,
+        justifyContent: 'space-between',
+        alignItems: 'center',
+    },
 });
 
 export default globalStyles;

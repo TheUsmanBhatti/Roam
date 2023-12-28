@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, TextInput } from 'react-native';
 import { COLORS } from '../../theme/colors';
 import TopTabBar from './TopTabBar';
-import Header1 from '../../components/headers/Header1';
 import IconButton from '../../components/buttons/IconButton';
 import Suggestions from './Suggestions';
 import MyFriends from './MyFriends';

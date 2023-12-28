@@ -9,12 +9,12 @@ import { mutualFriend } from '../../../assets/data/homeFeed';
 import { useNavigation } from '@react-navigation/native';
 
 // create a component
-const MainCard = ({ feed }) => {
+const MainCard = ({ feed, onShareClick }) => {
     const navigation = useNavigation();
 
     return (
         <View style={styles.container}>
-            <TouchableWithoutFeedback onPress={() => navigation?.navigate('ProfileDetail', {userId: feed?.userId})}>
+            <TouchableWithoutFeedback onPress={() => navigation?.navigate('ProfileDetail', { userId: feed?.userId })}>
                 <ImageBackground source={{ uri: feed?.avatar }} style={styles.avatar}>
                     <LinearGradient colors={['#000000D3', '#ffffff00']} style={{ height: 100, with: '100%' }}>
                         <Text style={styles?.name}>
@@ -23,7 +23,12 @@ const MainCard = ({ feed }) => {
                     </LinearGradient>
 
                     <View style={{ position: 'absolute', bottom: 10, right: 10 }}>
-                        <IconButton icon={'Share'} backgroundColor={COLORS.peachYellow} style={{ marginBottom: 10, alignSelf: 'center' }} />
+                        <IconButton
+                            onPress={onShareClick}
+                            icon={'Share'}
+                            backgroundColor={COLORS.peachYellow}
+                            style={{ marginBottom: 10, alignSelf: 'center' }}
+                        />
 
                         <MutualFriendCard
                             list={mutualFriend}

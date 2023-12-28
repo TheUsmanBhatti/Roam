@@ -1,18 +1,18 @@
 //import liraries
 import React, { Component } from 'react';
-import { View, Image, StyleSheet } from 'react-native';
+import { View, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import Typography from '../texts/Typography';
 import { COLORS } from '../../theme/colors';
 
 // create a component
-const GroupMemberCard = ({ avatar, label }) => {
+const GroupMemberCard = ({ avatar, label, disabled = true, onPress = () => {} }) => {
     return (
-        <View style={{ alignItems: 'center' }}>
+        <TouchableOpacity onPress={onPress} disabled={disabled} style={{ alignItems: 'center' }}>
             <Image source={{ uri: avatar }} style={styles.avatar} />
             <Typography weight={'regular'} size={10} color={COLORS.black}>
                 {label}
             </Typography>
-        </View>
+        </TouchableOpacity>
     );
 };
 

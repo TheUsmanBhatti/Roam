@@ -15,7 +15,7 @@ const Tab = createMaterialTopTabNavigator();
 const Feed = ({navigation}) => {
     return (
         <View style={{ flex: 1, backgroundColor: COLORS.white }}>
-            <Header1 iconLeft={'Add'} iconRight={'Message'} onIconLeftPress={() => {}} onIconRightPress={() => navigation.navigate('Chat')}>
+            <Header1 iconLeft={'Add'} iconRight={'Message'} onIconLeftPress={() => navigation.navigate('CreateEvent')} onIconRightPress={() => navigation.navigate('Chat')}>
                 <SimpleButton onPress={() => navigation.navigate('Friends')} label={'Add Friends'} style={{ flex: 0.4 }} />
             </Header1>
 

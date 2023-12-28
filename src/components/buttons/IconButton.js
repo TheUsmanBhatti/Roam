@@ -5,26 +5,38 @@ import { Icons } from '../../assets';
 import { COLORS } from '../../theme/colors';
 import Typography from '../texts/Typography';
 
-const IconButton = ({ backgroundColor = COLORS.gray.light, onPress = () => {}, icon, color='#000', style, label = null }) => {
+const IconButton = ({
+    backgroundColor = COLORS.gray.light,
+    onPress = () => {},
+    icon,
+    color = '#000',
+    style,
+    label = null,
+    disabled = false,
+}) => {
     const Icon = Icons[icon];
 
     const customStyle = {
         backgroundColor,
-        ...(label != null && ({
+        ...(label != null && {
             width: 'auto',
             flexDirection: 'row',
             paddingHorizontal: 15,
             flexWrap: 'no-wrap',
-            gap: 8
-        })),
-        ...style
-    }
+            gap: 8,
+        }),
+        ...style,
+    };
 
     return (
-        <TouchableOpacity onPress={onPress} style={[globalStyles.box40Center, customStyle]}>
+        <TouchableOpacity disabled={disabled} onPress={onPress} style={[globalStyles.box40Center, customStyle]}>
             <Icon width={24} height={24} stroke={color} />
 
-            {label != null && <Typography color={color} weight={'medium'}>{label}</Typography>}
+            {label != null && (
+                <Typography color={color} weight={'medium'}>
+                    {label}
+                </Typography>
+            )}
         </TouchableOpacity>
     );
 };

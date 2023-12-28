@@ -1,20 +1,16 @@
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { NavigationContainer } from '@react-navigation/native';
-import React, { Component } from 'react';
+import React from 'react';
 import { View, SafeAreaView, StyleSheet } from 'react-native';
-import TabNavigator from './src/navigations/TabNavgator';
-import HomeStack from './src/navigations/HomeStack';
 
-const Tab = createBottomTabNavigator();
+import RootStack from './src/navigations/RootStack';
+import Auth from './src/utils/Auth';
 
 const App = () => {
     return (
-        <SafeAreaView style={{flex: 1}}>
+        <SafeAreaView style={{ flex: 1 }}>
             <View style={styles.container}>
-                <NavigationContainer>
-                    <HomeStack />
-                    {/* <TabNavigator /> */}
-                </NavigationContainer>
+                <Auth>
+                    <RootStack />
+                </Auth>
             </View>
         </SafeAreaView>
     );

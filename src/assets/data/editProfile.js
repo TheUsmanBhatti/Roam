@@ -91,7 +91,7 @@ export const editProfile2 = [
         status: 'Hidden'
     },
     {
-        title: 'Langugaes Spoken',
+        title: 'Languages Spoken',
         answer: 'None',
         status: 'Hidden'
     },

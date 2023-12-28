@@ -74,7 +74,7 @@ const EventFinal = () => {
                 <View style={{ flexWrap: 'nowrap', gap: 15, paddingVertical: 15 }}>
                     <TextInput placeholder="Write Caption..." placeholderTextColor={COLORS.gray.dark} style={styles.textInput} />
 
-                    <SimpleButton label={'Post to feed'} />
+                    <SimpleButton label={'Post to feed'} onPress={() => navigation.navigate('TabNavigator')} />
 
                     <TouchableOpacity style={{ alignSelf: 'center', padding: 10 }}>
                         <Typography weight={'medium'} color={COLORS.black}>

@@ -407,6 +407,9 @@ PODS:
     - Google-Maps-iOS-Utils (= 4.1.0)
     - GoogleMaps (= 7.4.0)
     - React-Core
+  - react-native-image-picker (7.1.0):
+    - RCT-Folly (= 2021.07.22.00)
+    - React-Core
   - react-native-maps (1.8.0):
     - React-Core
   - react-native-pager-view (6.2.2):
@@ -614,6 +617,7 @@ DEPENDENCIES:
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
   - react-native-geolocation-service (from `../node_modules/react-native-geolocation-service`)
   - react-native-google-maps (from `../node_modules/react-native-maps`)
+  - react-native-image-picker (from `../node_modules/react-native-image-picker`)
   - react-native-maps (from `../node_modules/react-native-maps`)
   - react-native-pager-view (from `../node_modules/react-native-pager-view`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
@@ -709,6 +713,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-geolocation-service"
   react-native-google-maps:
     :path: "../node_modules/react-native-maps"
+  react-native-image-picker:
+    :path: "../node_modules/react-native-image-picker"
   react-native-maps:
     :path: "../node_modules/react-native-maps"
   react-native-pager-view:
@@ -799,6 +805,7 @@ SPEC CHECKSUMS:
   React-logger: 8edc785c47c8686c7962199a307015e2ce9a0e4f
   react-native-geolocation-service: 608e1da71a1ac31b4de64d9ef2815f697978c55b
   react-native-google-maps: 356b9d01da0920be13e4c4dc83673b30e8a22c16
+  react-native-image-picker: 5e076db26cd81660cfb6db5bcf517cfa12054d45
   react-native-maps: f699e0753c22c4d5c3a44d03895b193a4dbca6c2
   react-native-pager-view: 02a5c4962530f7efc10dd51ee9cdabeff5e6c631
   react-native-safe-area-context: 2cd91d532de12acdb0a9cbc8d43ac72a8e4c897c

@@ -42,6 +42,7 @@ const styles = StyleSheet.create({
         height: 48,
         backgroundColor: COLORS.gray.dark,
         borderRadius: 30,
+        overflow: 'hidden',
         textAlign: 'center',
         padding: 17,
         opacity: 0.5,

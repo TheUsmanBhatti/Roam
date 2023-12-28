@@ -13,6 +13,7 @@ const SimpleButton = ({
     variant = 'contained',
     style,
     onPress,
+    disabled = false,
 }) => {
     const styles = StyleSheet.create({
         container: {
@@ -22,12 +23,15 @@ const SimpleButton = ({
             borderRadius: 30,
             borderWidth: 1,
             borderColor: borderColor,
+            justifyContent: 'center',
+            opacity: disabled ? 0.5 : 1,
+            height: 48,
             ...style,
         },
     });
 
     return (
-        <TouchableOpacity onPress={onPress} style={styles.container}>
+        <TouchableOpacity disabled={disabled} onPress={onPress} style={styles.container}>
             <Typography weight={'medium'} color={color} style={{ textAlign: 'center' }}>
                 {label}
             </Typography>

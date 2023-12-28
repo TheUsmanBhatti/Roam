@@ -4,8 +4,8 @@ import { View, Text, StyleSheet } from 'react-native';
 import { COLORS } from '../theme/colors';
 
 // create a component
-const Divider = ({ stroke = 1, color = COLORS.gray.medium }) => {
-    return <View style={{ width: '100%', height: stroke, backgroundColor: color }} />;
+const Divider = ({ stroke = 1, color = COLORS.gray.medium, style }) => {
+    return <View style={{ width: '100%', height: stroke, backgroundColor: color, ...style }} />;
 };
 
 // define your styles

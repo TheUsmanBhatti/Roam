@@ -11,15 +11,17 @@ const FriendListCard = ({
     avatar,
     name,
     username,
+    onPress,
     showAddBtn = false,
     onAddBtnPress,
-    onCloseBtnPress,
+    onCloseBtnPress = () => {},
     showAcceptBtn = false,
     onAcceptBtnPress,
+    showCloseButton = true,
 }) => {
     return (
         <View style={styles.container}>
-            <View style={{ flexDirection: 'row' }}>
+            <TouchableOpacity onPress={onPress} style={{ flexDirection: 'row' }}>
                 <Image source={{ uri: avatar }} style={styles.avatar} />
 
                 <View style={{ justifyContent: 'space-evenly', marginLeft: 15 }}>
@@ -30,11 +32,11 @@ const FriendListCard = ({
                         {username}
                     </Typography>
                 </View>
-            </View>
+            </TouchableOpacity>
 
             <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                 {showAddBtn && (
-                    <TouchableOpacity style={styles.addBtn}>
+                    <TouchableOpacity onPress={onAddBtnPress} style={styles.addBtn}>
                         <Icons.Add height={24} width={24} stroke={COLORS.black} />
                         <Typography color={COLORS.black} weight={'medium'} style={{ marginHorizontal: 7 }}>
                             Add
@@ -42,11 +44,20 @@ const FriendListCard = ({
                     </TouchableOpacity>
                 )}
 
-                {showAcceptBtn && <SimpleButton style={{flex: 0, borderWidth: 0}} color={COLORS.black} label={'Accept'} backgroundColor={COLORS.peachYellow}/>}
+                {showAcceptBtn && (
+                    <SimpleButton
+                        style={{ flex: 0, borderWidth: 0 }}
+                        color={COLORS.black}
+                        label={'Accept'}
+                        backgroundColor={COLORS.peachYellow}
+                    />
+                )}
 
-                <TouchableOpacity style={{ marginLeft: 15 }}>
-                    <Icons.Close height={24} width={24} stroke={COLORS.black} />
-                </TouchableOpacity>
+                {showCloseButton && (
+                    <TouchableOpacity onPress={onCloseBtnPress} style={{ marginLeft: 15 }}>
+                        <Icons.Close height={24} width={24} stroke={COLORS.black} />
+                    </TouchableOpacity>
+                )}
             </View>
         </View>
     );

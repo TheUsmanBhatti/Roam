@@ -1,5 +1,5 @@
 import React, { Component, useRef, useState } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Animated, Image, ImageBackground, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Animated, Image, ImageBackground, ScrollView, Modal } from 'react-native';
 import { COLORS } from '../../theme/colors';
 import ProfileDetailHeader from '../../components/headers/ProfileDetailHeader';
 import Title1 from '../../components/texts/Title1';
@@ -14,6 +14,7 @@ import Photos from './Photos';
 import Prompt from './Prompt';
 import Plan from './Plan';
 import ProfileTop from '../../components/headers/ProfileTop';
+import SettingsModal from './SettingsModal';
 
 const ProfileDetail = ({ route }) => {
     const { userId } = route?.params;

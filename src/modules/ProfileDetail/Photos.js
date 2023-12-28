@@ -3,12 +3,53 @@ import React, { Component } from 'react';
 import { View, Image, StyleSheet, Dimensions } from 'react-native';
 import { COLORS } from '../../theme/colors';
 import IconButton from '../../components/buttons/IconButton';
+import { launchImageLibrary } from 'react-native-image-picker';
+import { useNavigation } from '@react-navigation/native';
 const { width, height } = Dimensions.get('window');
 // create a component
 const Photos = ({ data }) => {
+    const navigation = useNavigation();
+
+    const openGallery = async () => {
+        const options = {
+            storageOptions: {
+                path: 'images',
+                mediaType: 'photo',
+            },
+            includeBase64: true,
+            quality: 1,
+            maxWidth: 500,
+            maxHeight: 500,
+        };
+
+        await launchImageLibrary(options, response => {
+            if (response.didCancel) {
+                console.log('User cancelled image picker');
+            } else if (response.error) {
+                console.log('ImagePicker Error: ', response.error);
+            } else if (response.customButton) {
+                console.log('User tapped custom button: ', response.customButton);
+            } else {
+                // You can also display the image using data:
+                const source = {
+                    uri: 'data:image/jpeg;base64,' + response?.assets[0]?.base64,
+                };
+
+                navigation.navigate('AddPhoto', { image: source });
+            }
+        });
+    };
+
     return (
         <View style={styles.container}>
-            <IconButton style={{margin: 15}} icon="Add" label="Add Photo" backgroundColor={COLORS.tyrianPurple} color={COLORS.white} />
+            <IconButton
+                onPress={openGallery}
+                style={{ margin: 15 }}
+                icon="Add"
+                label="Add Photo"
+                backgroundColor={COLORS.tyrianPurple}
+                color={COLORS.white}
+            />
 
             <View style={styles.photosCon}>
                 {data?.map(item => (

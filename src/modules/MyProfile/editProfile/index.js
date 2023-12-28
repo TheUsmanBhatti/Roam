@@ -1,6 +1,6 @@
 //import liraries
-import React, { Component } from 'react';
-import { View, Text, StyleSheet, ScrollView, Image } from 'react-native';
+import React, { Component, useState } from 'react';
+import { View, Text, StyleSheet, ScrollView, Image, TouchableOpacity, Modal, SafeAreaView } from 'react-native';
 import { COLORS } from '../../../theme/colors';
 import Header1 from '../../../components/headers/Header1';
 import IconButton from '../../../components/buttons/IconButton';
@@ -9,9 +9,12 @@ import Divider from '../../../components/Divider';
 import Typography from '../../../components/texts/Typography';
 import { Icons } from '../../../assets';
 import { editProfile1, editProfile2 } from '../../../assets/data/editProfile';
+import EditDetail1 from './EditDetail1';
 
 // create a component
 const EditProfile = ({ onClose }) => {
+    const [editDetail, setEditDetail] = useState({ open: false, profile: null });
+
     return (
         <View style={styles.container}>
             <Header1
@@ -19,7 +22,7 @@ const EditProfile = ({ onClose }) => {
                 iconLeft={'Close'}
                 iconRight={'Check'}
                 onIconLeftPress={() => onClose()}
-                onIconRightPress={() => navigation?.navigate('Chat')}
+                onIconRightPress={() => {}}
             />
 
             <ScrollView contentContainerStyle={{ padding: 15 }}>
@@ -38,7 +41,12 @@ const EditProfile = ({ onClose }) => {
 
                     {editProfile1.map(item => (
                         <View key={item?.title}>
-                            <ProfileBtn title={item?.title} answer={item.answer} status={item?.status} />
+                            <ProfileBtn
+                                onPress={() => setEditDetail({ open: true, profile: item })}
+                                title={item?.title}
+                                answer={item.answer}
+                                status={item?.status}
+                            />
                             <Divider />
                         </View>
                     ))}
@@ -49,12 +57,23 @@ const EditProfile = ({ onClose }) => {
 
                     {editProfile2.map(item => (
                         <View key={item?.title}>
-                            <ProfileBtn title={item?.title} answer={item.answer} status={item?.status} />
+                            <ProfileBtn
+                                onPress={() => setEditDetail({ open: true, profile: item })}
+                                title={item?.title}
+                                answer={item.answer}
+                                status={item?.status}
+                            />
                             <Divider />
                         </View>
                     ))}
                 </View>
             </ScrollView>
+
+            <Modal animationType="slide" visible={editDetail?.open}>
+                <SafeAreaView style={{ flex: 1 }}>
+                    <EditDetail1 onClose={() => setEditDetail({ open: false, profile: null })} profile={editDetail?.profile} />
+                </SafeAreaView>
+            </Modal>
         </View>
     );
 };
@@ -70,9 +89,9 @@ const styles = StyleSheet.create({
 //make this component available to the app
 export default EditProfile;
 
-const ProfileBtn = ({ title, answer, status }) => {
+const ProfileBtn = ({ title, answer, status, onPress }) => {
     return (
-        <View style={{ paddingVertical: 15 }}>
+        <TouchableOpacity onPress={onPress} style={{ paddingVertical: 15 }}>
             <Typography weight={'regular'} color={COLORS.black}>
                 {title}
             </Typography>
@@ -88,6 +107,6 @@ const ProfileBtn = ({ title, answer, status }) => {
                     <Icons.ArrowRight height={18} width={18} stroke={COLORS.black} style={{ marginHorizontal: 15 }} />
                 </View>
             </View>
-        </View>
+        </TouchableOpacity>
     );
 };

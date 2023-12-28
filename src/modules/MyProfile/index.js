@@ -14,12 +14,15 @@ import Plan from '../ProfileDetail/Plan';
 import { COLORS } from '../../theme/colors';
 import IconButton from '../../components/buttons/IconButton';
 import EditProfile from './editProfile';
+import SettingsModal from '../ProfileDetail/SettingsModal';
 
 // create a component
 const MyProfile = () => {
     let user = mainFeed[0]?.detailInfo;
     const [activeTab, setActiveTab] = useState('photos');
     const [showEditProfile, setShowEditProfile] = useState(false);
+
+    const [showSettingModal, setShowSettingModal] = useState(false);
 
     return (
         <>
@@ -37,7 +40,7 @@ const MyProfile = () => {
 
                 <View style={{ flexDirection: 'row' }}>
                     <IconButton icon="Bell1" style={{ marginRight: 5 }} />
-                    <IconButton icon="Settings" />
+                    <IconButton icon="Settings" onPress={() => setShowSettingModal(true)} />
                 </View>
             </View>
             <ScrollView contentContainerStyle={{ paddingBottom: 100, backgroundColor: COLORS.white }}>
@@ -76,9 +79,20 @@ const MyProfile = () => {
                 )}
 
                 <Modal animationType="slide" visible={showEditProfile}>
-                    <SafeAreaView style={{flex: 1}}>
-                    <EditProfile onClose={() => setShowEditProfile(false)} />
+                    <SafeAreaView style={{ flex: 1 }}>
+                        <EditProfile onClose={() => setShowEditProfile(false)} />
                     </SafeAreaView>
+                </Modal>
+
+                <Modal visible={showSettingModal} animationType="slide" transparent>
+                    <View
+                        style={{
+                            backgroundColor: COLORS.blackTransparent,
+                            flex: 1,
+                            justifyContent: 'flex-end',
+                        }}>
+                        <SettingsModal onClose={() => setShowSettingModal(false)} />
+                    </View>
                 </Modal>
             </ScrollView>
         </>
